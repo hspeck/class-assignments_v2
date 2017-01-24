@@ -14,3 +14,80 @@ One directory got corrupted so had to make a new directory, can do multiple find
 
 well nevermind, didn't work i guess
 added a .txt to the end of this file
+  848  ls
+  849  gedit week-2-hw-eeb177.txt 
+  850  cd ~/Desktop/eeb-177/class-assignments/
+  851  gedit classwork-Tuesday-1-24.txt
+  852  git add classwork-Tuesday-1-24.txt 
+  853  git commit -m "work for 1-24 in class"
+  854  cd ..
+  855  mkdir class-assignments_v2
+  856  cd class-assignments_v2/
+  857  git init
+  858  cd ../CSB/unix/sandbox/
+  859  wget http://tinyurl.com/cep-taxa -O cep-taxa.txt
+  860  ls
+  861  cd ../../..
+  862  cd class-assignments_v2/
+  863  touch class-assignments-Tues-1-24
+  864  git remote add origin https://github.com/hspeck/class-assignments_v2.git
+  865  git push -u origin master
+  866  cd .
+  867  cd-
+  868  cd ../CSB/unix/sandbox/
+  869  less cep-taxa.txt 
+  870  grep -w Orchidaceae cep-taxa.txt 
+  871  grep -w c Orchidaceae cep-taxa.txt 
+  872  grep -w -c Orchidaceae cep-taxa.txt 
+  873  cd ~/Desktop/eeb-177/class-assignments_v2/
+  874  cd -
+  875  grep Falcon cep-taxa.txt 
+  876  grep falcon cep-taxa.txt 
+  877  grep -i falcon
+  878  grep -i falcon cep-taxa.txt 
+  879  grep -i ara cep-taxa.txt 
+  880  grep -w -i ara cep-taxa.txt 
+  881  grep -A 3 -B 3 -w -i Cebus cep-taxa.txt 
+  882  grep -n -i iguana cep-taxa.txt 
+  883  grep -n -i -w iguana cep-taxa.txt 
+  884  grep -n -v -w -i -c  ara cep-taxa.txt 
+  885  grep -n -v -w -i  ara cep-taxa.txt 
+  886  find .*
+  887  find ../data
+  888  find ~/Desktop/eeb-177/CSB/unix/data
+  889  find ../data | wc -l
+  890  find ../data/ -name "n30.txt"
+  891  find .. -iname "*about*"
+  892  find ~/Desktop/eeb-177/ -iname "*classwork*"
+  893  find ~/Desktop/eeb-177/ -iname "*class*"
+  894  find ~/Desktop/eeb-177/ -iname "*class*">> /home/eeb177-student/Desktop/eeb-177/class-assignments_v2/class-assignments-Tues-1-24 
+  895  gedit /home/eeb177-student/Desktop/eeb-177/class-assignments_v2/class-assignments-Tues-1-24 
+  896  find /home/eeb177-student/Desktop/eeb-177/class-assignments -iname "*class*">> /home/eeb177-student/Desktop/eeb-177/class-assignments_v2/class-assignments-Tues-1-24 
+  897  find /home/eeb177-student/Desktop/eeb-177/class-assignments_v2/ -iname "*class*">> /home/eeb177-student/Desktop/eeb-177/class-assignments_v2/class-assignments-Tues-1-24 
+  898  cd -
+  899  touch README.txt
+  900  git add README.txt class-assignments-Tues-1-24 
+  901  git commit -m "have to make a new directory, old one not work"
+  902  git push
+  903  git push -u origin master
+  904  gedit class-assignments-Tues-1-24 
+  905  mv class-assignments-Tues-1-24 class-assignments-Tues-1-24.txt
+  906  ls
+  907  gedit class-assignments-Tues-1-24.txt 
+  908  git add -A
+  909  git commit -m "renamed the notes for today as a text file"
+  910  git push
+  911  cd -
+  912  find ../data -maxdepth 1 -name  "*.txt"
+  913  find ../data -maxdepth 1 -name  "*.txt"|wc -l
+  914  find ../data -name  "*.txt"|wc -l
+  915  ls -l
+  916  touch permissions.txt
+  917  ls -l
+  918  chmod u=rwx permissions.txt 
+  919  chmod g+w, u+w permissions.txt 
+  920  history
+  921  history 850
+  922  history -n 850
+  923  history 70
+  924  history 77 >> ~/Desktop/eeb-177/class-assignments_v2/class-assignments-Tues-1-24.txt 
